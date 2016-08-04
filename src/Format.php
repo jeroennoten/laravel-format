@@ -4,8 +4,8 @@ use Carbon\Carbon;
 
 class Format
 {
-    public function timestamp(Carbon $date = null)
+    public function timestamp(Carbon $date, $format = '%x %X')
     {
-        return $date->formatLocalized('%x %X');
+        return $date->formatLocalized($format);
     }
 }
