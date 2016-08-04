@@ -1,6 +1,21 @@
 {
+    "name": "jeroennoten/laravel-format",
+    "description": "Laravel Format",
+    "keywords": ["laravel", "format"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeroen Noten",
+            "email": "jeroennoten@me.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "JeroenNoten\\LaravelFormat\\": "src/"
+        }
+    },
     "require": {
-        "laravel/framework": "^5.2",
+        "laravel/framework": "5.2.*",
         "jeroennoten/laravel-package-helper": "^2.0"
     }
 }
