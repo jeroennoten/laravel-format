@@ -14,8 +14,17 @@
             "JeroenNoten\\LaravelFormat\\": "src/"
         }
     },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    },
     "require": {
         "laravel/framework": "5.2.*",
-        "jeroennoten/laravel-package-helper": "^2.0"
+        "jeroennoten/laravel-package-helper": "^3.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "3.2.*",
+        "phpunit/phpunit": "^5.5"
     }
 }
