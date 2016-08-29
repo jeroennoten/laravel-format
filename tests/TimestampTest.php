@@ -12,6 +12,8 @@ class TimestampTest extends TestCase
         $views = $this->app->make(Factory::class);
         $views->addLocation(__DIR__ . '/stubs');
 
+        $this->artisan('view:clear');
+
         $time = Carbon::create(2016);
         $rendered = view('test', compact('time'))->render();
 
